@@ -1,0 +1,9 @@
+<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AaqroHp0cK8sUh-4B8pX9yDjjTIrZ4RENlK0bZ3Vnll50OBRqO375pRW7UwOjq8LNbI831GjszH5RwkX"></script>
+<script>
+  paypal.Buttons({
+    env: 'sandbox', // Valid values are sandbox and live.
+    createOrder: async () => {},
+    onApprove: async (data) => {}
+  }).render('#paypal-button-container');
+</script>
